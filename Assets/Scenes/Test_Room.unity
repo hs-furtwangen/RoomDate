@@ -132,6 +132,8 @@ GameObject:
   m_Component:
   - component: {fileID: 137213971}
   - component: {fileID: 137213970}
+  - component: {fileID: 137213973}
+  - component: {fileID: 137213972}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -197,6 +199,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &137213972
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 137213969}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8}
+  m_EdgeRadius: 0
+--- !u!114 &137213973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 137213969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd51722d75798ad4783bc71ee55c75f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeBonus: -1
 --- !u!1 &236995458
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameState: BookFound
   InitialState: 0
+  TimeBonus: 5
   DeactivateColliderOnClick: 1
   DeactivateGameobjectOnClick: 0
   ActivateGameobjects:
@@ -1087,6 +1127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameState: FoundBlanket
   InitialState: 0
+  TimeBonus: 2
   DeactivateColliderOnClick: 1
   DeactivateGameobjectOnClick: 1
   ActivateGameobjects:

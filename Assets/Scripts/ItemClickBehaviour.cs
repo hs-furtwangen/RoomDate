@@ -4,13 +4,18 @@ public class ItemClickBehaviour : MonoBehaviour {
 
     public string GameState;
     public bool InitialState;
+    public float TimeBonus;
 
     public bool DeactivateColliderOnClick;
     public bool DeactivateGameobjectOnClick;
     public GameObject[] ActivateGameobjects;
 
+    private RoomTimer _roomTimer;
+
     void Start()
     {
+        _roomTimer = GameObject.Find("RoomController").GetComponent<RoomTimer>();
+
         if (GameState != "")
         {
             GameStates.Register(GameState, InitialState);
@@ -44,6 +49,11 @@ public class ItemClickBehaviour : MonoBehaviour {
         {
             Debug.Log("Deactivated gamobject " + this.gameObject.name);
             this.gameObject.SetActive(false);
+        }
+
+        if (TimeBonus != 0 && _roomTimer != null)
+        {
+            _roomTimer.ModTimer(TimeBonus);
         }
     }
 }

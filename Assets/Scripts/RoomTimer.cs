@@ -38,4 +38,9 @@ public class RoomTimer : MonoBehaviour {
             }
         }
 	}
+
+    public void ModTimer(float amount)
+    {
+        RoomBaseTimer += amount;
+    }
 }
