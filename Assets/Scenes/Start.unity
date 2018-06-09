@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 1342203008}
   - component: {fileID: 1342203007}
   m_Layer: 0
-  m_Name: FreedSketch SciHappy V1 - 01
+  m_Name: Sci
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1090,7 +1090,7 @@ GameObject:
   - component: {fileID: 1842248761}
   - component: {fileID: 1842248760}
   m_Layer: 0
-  m_Name: FreedSketch SamAnnoyed V1 - 01
+  m_Name: Sam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,7 +1131,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 987ccb78b0c75624ab31ae54ac012105, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8cba6b16e00648b43811f6049269f0b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

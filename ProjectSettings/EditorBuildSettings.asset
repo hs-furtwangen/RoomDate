@@ -5,22 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: 8a6b2f27e296061419c0b4cbdeb5dbb1
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: cb475b8b421421b42bb8b3319d587fb2
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: 9b1746be709961949bd6528a8af20162
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/CharSelect.unity
     guid: e1eff570eecb23d419f54912d160b59c
   - enabled: 1
-    path: Assets/Scenes/Room.unity
+    path: Assets/Scenes/Room_Player.unity
+    guid: 237687b4bbdd0664a9c646683eb231b5
+  - enabled: 1
+    path: Assets/Scenes/Test_Room.unity
     guid: 6fa76a369f171ef418e20ca3e724349c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Dinner.unity
     guid: d7fd4de6bfdb05841bfd9e9058a41796
   m_configObjects: {}
