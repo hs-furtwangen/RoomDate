@@ -213,7 +213,7 @@ Prefab:
     - target: {fileID: 114666291546088340, guid: 921e1f3d72ded7947bcab63a1a30089d,
         type: 2}
       propertyPath: m_Text
-      value: Leave
+      value: DATE
       objectReference: {fileID: 0}
     - target: {fileID: 114388692997297936, guid: 921e1f3d72ded7947bcab63a1a30089d,
         type: 2}
@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8627451}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -498,11 +498,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 40
+    m_MaxSize: 48
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -510,7 +510,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: You are in your room, you get your wallet and your keys, fluff up your Stephen
-    Hawking bodypillow and off you go.
+    Hawking bodypillow and off you go to your date.
 --- !u!222 &1286929169
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -626,7 +626,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 71e0730ac0dfc0541a0bf382645d6a9b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 06cd43dbc675be943bc564739fb3c991, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
