@@ -15,24 +15,49 @@ public class DialogController : MonoBehaviour {
     public GameObject InterestText;
     private Text _interestText;
 
+    public string JsonFile;
+
     public float ButtonVertOffset;
+
+    public GameObject Neutral;
+    public float AnoyedTheshold;
+    public GameObject Anoyed;
+    public float HappyThreshold;
+    public GameObject Happy;
 
     private List<DialogEntry> dialogTree;
 
 	// Use this for initialization
 	void Start () {
-        GameStates.Register("yeah", true);
-
         _interestText = InterestText.GetComponent<Text>();
 
-        dialogTree = JsonConvert.DeserializeObject<List<DialogEntry>>(File.ReadAllText(Application.streamingAssetsPath + "/testdialog.json"));
-        LoadId("root");
+        dialogTree = JsonConvert.DeserializeObject<List<DialogEntry>>(File.ReadAllText(Application.streamingAssetsPath + "/" + JsonFile));
+        LoadId("arriving");
 	}
 	
 	// Update is called once per frame
 	void Update () {
         _interestText.text = GameStates.InterestLevel.ToString();
-	}
+
+        if (GameStates.InterestLevel < AnoyedTheshold)
+        {
+            Neutral.SetActive(false);
+            Anoyed.SetActive(true);
+            Happy.SetActive(false);
+        }
+        else if (GameStates.InterestLevel > HappyThreshold)
+        {
+            Neutral.SetActive(false);
+            Anoyed.SetActive(false);
+            Happy.SetActive(true);
+        }
+        else
+        {
+            Neutral.SetActive(true);
+            Anoyed.SetActive(false);
+            Happy.SetActive(false);
+        }
+    }
 
     public void LoadId(string id)
     {
@@ -47,12 +72,20 @@ public class DialogController : MonoBehaviour {
 
         DialogEntry DE = new DialogEntry();
 
+        bool found = false;
+
         foreach (var de in dialogTree)
         {
             if (de.id.Equals(id))
             {
+                found = true;
                 DE = de;
             }
+        }
+
+        if (!found)
+        {
+            Debug.LogError(id + " not found in dialogTree.");
         }
 
         if (DE.id != id)
@@ -152,7 +185,7 @@ public class DialogController : MonoBehaviour {
             go.transform.Find("Text").GetComponent<Text>().text = DE.text;
 
             string next = "";
-            if (DE.nextIds != null)
+            if (DE.nextIds != null && DE.nextIds.Length != 0)
             {
                 next = DE.nextIds[0];
             }

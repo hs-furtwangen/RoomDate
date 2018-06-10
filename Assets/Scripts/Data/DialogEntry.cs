@@ -5,7 +5,7 @@ using UnityEngine;
 public struct DialogEntry
 {
     public string id;
-    public bool player;
+    public int player;
     public string[] stateDependency;
     public bool used;
     public string[] nextIds;

@@ -1,0 +1,355 @@
+﻿[
+  {
+    "id": "arriving",
+    "nextIds": [
+      "arrivingb"
+    ],
+    "text": "Arriving at the candlelight dinner, restaurant."
+  },
+  {
+    "id": "arrivingb",
+    "nextIds": [
+      "excuse1", "excuse2", "excuse3", "excuse4", "excuse5"
+    ],
+    "text": "",
+  },
+  {
+    "id": "excuse1",
+    "nextIds": null,
+    "text": "I'm sorry for being late, my visit to your room has taken more time than I thought."
+  },
+  {
+    "id": "excuse2",
+    "nextIds": [
+      "sam01-1"
+    ],
+    "text": "Sorry, something happened on the way, it's a long story. I hope you didn´t wait too long."
+  },{
+    "id": "excuse3",
+    "nextIds": [
+      "sam01-1"
+    ],
+    "text": "What a fancy place, I'm sorry for being late."
+  },{
+    "id": "excuse4",
+    "nextIds": [
+      "sam01-2"
+    ],
+    "text": "Oh, you waited for me, I must be a very important person to you."
+  },{
+    "id": "excuse5",
+    "nextIds": [
+     // "deaht"
+    ],
+    "text": "Hey baby, this place sucks, let's go home together right now!"
+  },
+  //sam answers
+  {
+    "id": "sam01-1",
+    "nextIds": [
+      "isaac01"
+    ],
+    "text": "Oh, no problem. I'm here only since 5 minutes."
+  }, 
+  {
+    "id": "sam01-2",
+    "nextIds": [
+      "isaac01"
+    ],
+    "text": "Uh...Ooook. Maybe the next time there will be nobody sitting here."
+  },
+//chit chat
+  {
+    "id": "isaac01",
+    "nextIds": [
+      "sam02a"
+    ],
+    "text": "Have you already ordered?"
+  },
+  {
+    "id": "sam02a",
+    "nextIds": [
+      "sam02b" 
+    ],
+    "text": "Only something to drink, the waiter will come soon. What would you like to eat ?"
+  },
+  {
+    "id": "sam02b",
+    "nextIds": [
+      "meal1", "meal2", "meal3", "meal4", "meal5", 
+    ],
+    "text": ""
+  },
+//meal choice
+  {
+    "id": "meal1",
+    "nextIds": [
+    //  "death"
+    ],
+    "text": "You !"
+  },
+  {
+    "id": "meal2",
+    "nextIds": [
+      "chtterling0-1"
+    ],
+    "text": "Mmmmh, the chitterlings with garlic pasta sing good."
+  },
+  {
+    "id": "meal3",
+    "nextIds": [
+      "sam03-2"
+    ],
+    "text": "I think I'm gonna take the chief tartar"
+  },
+  {
+    "id": "meal4",
+    "nextIds": [
+      "sam03-2"
+    ],
+    "text": "I don't know, maybe the breaded chicken with potatoes."
+  },
+  {
+    "id": "meal5",
+    "nextIds": [
+      "sam03-2"
+    ],
+    "text": "The ceasar salad."
+  },
+  //chitterlings
+  {
+    "id": "chtterling0-1",
+    "nextIds": [
+      "chtterling1-1", "chtterling2-1"
+    ],
+    "text": "Are you sure ?"
+  },
+  {
+    "id": "chtterling1-1",
+    "nextIds": [
+      "sam03-1"
+    ],
+    "text": "Yes !"
+  },
+   {
+    "id": "chtterling2-1",
+    "nextIds": [
+      "sam03-2"
+    ],
+    "text": "Uhh no, you're right. I take the ceasar salad."
+  },
+  //sam answers
+   {
+    "id": "sam03-1",
+    "nextIds": [
+      "waitertransition"
+    ],
+    "text": "Oh, eeeh...ok...ok. I´ll take the mountain salad. Waiter ?"
+  },
+   {
+    "id": "sam03-2",
+    "nextIds": [
+      "waitertransition"
+    ],
+    "text": "Fine. For me, I´d take the mountain salad. Waiter ?"
+  },
+   {
+    "id": "waitertransition",
+    "nextIds": [
+      "subjectMenu"
+    ],
+    "text": "You taking order..."
+  },
+   {
+    "id": "subjectMenu",
+    "nextIds": [
+      "manga0-1", "poster1-1", "poster2-1", "figure0-1", "bodypillow0-1", "cosplay0-1", "panties1-1", "panties2-1", "laptop1-1", "laptop2-1", "mom1-1", "mom2-1", "flag1-1", "flag2-1"
+    ],
+    "text": "Thanks you, Sir. So, what do you want to talk ?"
+  },
+  //dialogue 01
+  {
+    "id": "panties1-1",
+    "nextIds": [
+      "panties1-2"
+    ],
+    "text": "I really like the lace too"
+  },
+  {
+    "id": "panties1-2",
+    "nextIds": [
+      "panties1-3"
+    ],
+    "text": "What?"
+  },
+  {
+    "id": "panties1-3",
+    "nextIds": [
+      "panties1-4"
+    ],
+    "text": "And eehh, it seems it's beautiful with the color wine red."
+  },
+  {
+    "id": "panties1-4",
+    "nextIds": [
+      "panties1-5"
+    ],
+    "text": "I don't see the relation!",
+  },
+  {
+    "id": "panties1-5",
+    "nextIds": [
+      "panties1-6"
+    ],
+    "text": "Beuh, so - sometime...two things go very well together...",
+  },
+  {
+    "id": "panties1-6",
+    "nextIds": [
+      "panties1-7"
+    ],
+    "text": "?",
+  },
+  {
+    "id": "panties1-7",
+    "nextIds": [
+      "panties1-8"
+    ],
+    "text": "For, well...for example...some...pieces of clothes.",
+  },
+  {
+    "id": "panties1-8",
+    "nextIds": [
+      "panties1-9"
+    ],
+    "text": "Hmmm?? Which clothes??",
+  },
+  {
+    "id": "panties1-9",
+    "nextIds": [
+      "panties1-10"
+    ],
+    "text": "Eeeeh what you wear.",
+  },
+  {
+    "id": "panties1-10",
+    "nextIds": [
+      "panties1-11"
+    ],
+    "text": "I don't wear something like that !",
+  },
+  {
+    "id": "panties1-11",
+    "nextIds": [
+      "panties1-12"
+    ],
+    "text": "Maybe not today, but...some other days",
+  },
+  {
+    "id": "panties1-12",
+    "nextIds": [
+      "panties1-13"
+    ],
+    "text": "Do you talk about underwear?!!",
+  },
+  {
+    "id": "panties1-13",
+    "nextIds": [
+      "panties1-14"
+    ],
+    "text": "Ye- NO!",
+  },
+  {
+    "id": "panties1-14",
+    "nextIds": [
+      "panties1-15"
+    ],
+    "text": "“MY underwear?",
+  },
+  {
+    "id": "panties1-15",
+    "nextIds": [
+      "panties1-16"
+    ],
+    "text": "NO!",
+  },
+  {
+    "id": "panties1-16",
+    "nextIds": [
+      "panties1-17"
+    ],
+    "text": "You would spy on me?",
+  },
+  {
+    "id": "panties1-17",
+    "nextIds": [
+      "panties1-18"
+    ],
+    "text": "NO!",
+  },
+  {
+    "id": "panties1-18",
+    "nextIds": [
+      "panties1-19"
+    ],
+    "text": "Is that true?",
+  },
+  {
+    "id": "panties1-19",
+    "nextIds": [
+     // "death"
+    ],
+    "text": "NO!....I MEAN YES!!",
+  },
+//dialogue 02
+  {
+    "id": "panties2-1",
+    "nextIds": [
+      "panties2-2"
+    ],
+    "text": "So what do you prefer between cats and ships"
+  },
+  {
+    "id": "panties2-2",
+    "nextIds": [
+      "panties2-3"
+    ],
+    "text": "Excuse me?"
+  },
+  {
+    "id": "panties2-3",
+    "nextIds": [
+      "panties2-4"
+    ],
+    "text": "I mean, you have a preference for ships and cats, don´t you?"
+  },
+  {
+    "id": "panties2-4",
+    "nextIds": [
+      "panties2-5"
+    ],
+    "text": "Eeeh, that's not the case"
+  },
+  {
+    "id": "panties2-5",
+    "nextIds": [
+      "panties2-6"
+    ],
+    "text": "Really, I was convinced."
+  },
+  {
+    "id": "panties2-6",
+    "nextIds": [
+      "panties2-7"
+    ],
+    "text": "Where did this assumption come from?"
+  },
+  {
+    "id": "panties2-7",
+    "nextIds": [
+    //  "death"
+    ],
+    "text": "From your panties...."
+  }
+
+]

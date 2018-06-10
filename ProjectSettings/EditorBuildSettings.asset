@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dinner.unity
     guid: d7fd4de6bfdb05841bfd9e9058a41796
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 14d7cfbcdc87efe41a5b3113a18f6059
   m_configObjects: {}
