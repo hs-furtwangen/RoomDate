@@ -1,0 +1,43 @@
+[
+  {
+    "id": "root",
+    "player": true,
+    "stateDependency": null,
+    "used": false,
+    "nextIds": [
+      "root2"
+    ],
+    "text": "This is root",
+    "needsInterest": -10,
+    "interestValue": 100
+  },
+  {
+    "id": "root2",
+    "player": false,
+    "stateDependency": null,
+    "used": false,
+    "nextIds": [
+      "root3", "root4"
+    ],
+    "text": "This is root2"
+
+  },
+  {
+    "id": "root3",
+    "player": false,
+    "stateDependency": ["yeah"],
+    "used": false,
+    "nextIds": null,
+    "text": "This is root3",
+    "needsInterest": 10,
+    "interestValue": 100
+  },
+  {
+    "id": "root4",
+    "player": false,
+    "stateDependency": null,
+    "used": false,
+    "nextIds": null,
+    "text": "This is root4"
+  }
+]

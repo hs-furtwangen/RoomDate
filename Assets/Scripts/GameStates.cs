@@ -4,6 +4,7 @@ using UnityEngine;
 public static class GameStates {
 
     private static Dictionary<string, bool> _gameStates;
+    public static int InterestLevel = 0;
 
     static GameStates()
     {
